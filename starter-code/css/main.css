@@ -22,5 +22,19 @@
 }
 
 .back {
-	
+	position: relative;
+	top: -200px;
+	-webkit-transform: rotateY(-180deg);
+	overflow: scroll;
 }
+
+.portfolio-item {
+	height: 200px;
+}
+
+.portfolio-item:hover .back {
+	-webkit-transform: rotateY(0);
+}
+
+.portfolio-item:hover .front {
+	-webkit-transform: rotateY(180deg);
